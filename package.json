@@ -12,6 +12,7 @@
     "test": "npm run lerna-test",
     "commit": "commit",
     "package": "npm run package",
+    "postinstall": "lerna bootstrap",
     "lerna-ci": "lerna exec -- npm ci",
     "lerna-test": "lerna exec -- npm run test",
     "lerna-package": "lerna exec -- npm run package",
