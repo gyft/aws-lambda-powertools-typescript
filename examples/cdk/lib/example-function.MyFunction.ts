@@ -34,7 +34,7 @@ export const handler = async (event: unknown, context: Context): Promise<void> =
 
   // ### Experiment with Metrics
   metrics.captureColdStartMetric();
-  metrics.raiseOnEmptyMetrics();
+  metrics.throwOnEmptyMetrics();
   metrics.setDefaultDimensions({ environment: 'example', type: 'standardFunction' });
   metrics.addMetric('test-metric', MetricUnits.Count, 10);
 
