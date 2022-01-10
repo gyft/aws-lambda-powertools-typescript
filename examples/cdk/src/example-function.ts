@@ -12,7 +12,6 @@ interface ExampleFunctionProps {
 }
 
 class ExampleFunction extends Construct {
-  public function: NodejsFunction;
 
   public constructor(scope: Construct, id: string, props: ExampleFunctionProps) {
     super(scope, id);
