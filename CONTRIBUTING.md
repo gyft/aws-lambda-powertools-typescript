@@ -61,7 +61,7 @@ You can build and start a local docs website by running these two commands.
 
 As part of the repo you will find an examples folder at the root. This folder contains examples (written with CDK for now) of deployable AWS Lambda functions using Powertools.
 
-To test your updates with this examples you just have to:
+To test your updates with these examples you just have to:
 
 1. Build your local version of *aws-lambda-powertools-typescript* npm packages with `npm run lerna-package`
 1. Update their references in examples
