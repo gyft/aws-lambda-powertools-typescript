@@ -59,7 +59,7 @@ You can build and start a local docs website by running these two commands.
 
 ### Examples
 
-As part of the repo you will find an examples folder at the root. This folder contains examples (written with CDK for now) of deployable lambdas using powertools lib.
+As part of the repo you will find an examples folder at the root. This folder contains examples (written with CDK for now) of deployable AWS Lambda functions using Powertools.
 
 To test your updates with this examples you just have to:
 
