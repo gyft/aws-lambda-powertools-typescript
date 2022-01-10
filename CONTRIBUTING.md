@@ -78,6 +78,7 @@ To test your updates with these examples you just have to:
     npm run cdk deploy
     ```
 
+Previous command will deploy AWS resources therefore you will need an AWS account and it might incur in some costs which should be covered by the [AWS Free Tier](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all). If you don't have an AWS Account follow [these instructions to create one](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/).
 ### Conventions
 
 Category | Convention
