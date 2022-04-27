@@ -13,28 +13,29 @@
       
       
       <link rel="icon" href="../media/aws-logo-light.svg">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.11">
     
     
       
-        <title>Changelog - Lambda Powertools TypeScript</title>
+        <title>Changelog - AWS Lambda Powertools for TypeScript</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.a617204b.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.8c5ef100.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.9204c3b2.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.9647289d.min.css">
         
       
     
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700%7C&display=fallback">
-        <style>:root{--md-text-font:"Ubuntu";--md-code-font:""}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Ubuntu";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -60,7 +61,7 @@
   
     
     
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)</script>
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -80,6 +81,16 @@
       <div data-md-component="outdated" hidden>
         <aside class="md-banner md-banner--warning">
           
+            <div class="md-banner__inner md-grid md-typeset">
+              
+You're not viewing the latest version.
+<a href="../..">
+  <strong>Click here to go to latest.</strong>
+</a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          
         </aside>
       </div>
     
@@ -88,19 +99,19 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Lambda Powertools TypeScript" class="md-header__button md-logo" aria-label="Lambda Powertools TypeScript" data-md-component="logo">
+    <a href=".." title="AWS Lambda Powertools for TypeScript" class="md-header__button md-logo" aria-label="AWS Lambda Powertools for TypeScript" data-md-component="logo">
       
   <img src="../media/aws-logo-light.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Lambda Powertools TypeScript
+            AWS Lambda Powertools for TypeScript
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -129,7 +140,7 @@
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
             </label>
           
         
@@ -138,7 +149,7 @@
     
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -146,13 +157,13 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
@@ -172,10 +183,10 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/awslabs/aws-lambda-powertools-typescript/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/awslabs/aws-lambda-powertools-typescript" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -207,19 +218,19 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Lambda Powertools TypeScript" class="md-nav__button md-logo" aria-label="Lambda Powertools TypeScript" data-md-component="logo">
+    <a href=".." title="AWS Lambda Powertools for TypeScript" class="md-nav__button md-logo" aria-label="AWS Lambda Powertools for TypeScript" data-md-component="logo">
       
   <img src="../media/aws-logo-light.svg" alt="logo">
 
     </a>
-    Lambda Powertools TypeScript
+    AWS Lambda Powertools for TypeScript
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/awslabs/aws-lambda-powertools-typescript/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/awslabs/aws-lambda-powertools-typescript" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -261,9 +272,53 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Changelog
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Changelog
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#081-2022-04-14" class="md-nav__link">
+    0.8.1 (2022-04-14)
+  </a>
+  
+    <nav class="md-nav" aria-label="0.8.1 (2022-04-14)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -315,6 +370,14 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
       
       
+      
+        
+          
+        
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_5">
@@ -397,6 +460,34 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#081-2022-04-14" class="md-nav__link">
+    0.8.1 (2022-04-14)
+  </a>
+  
+    <nav class="md-nav" aria-label="0.8.1 (2022-04-14)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -407,28 +498,108 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/edit/develop/docs/changelog.md" title="Edit this page" class="md-content__button md-icon">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-</a>
+  <a href="https://github.com/awslabs/aws-lambda-powertools-typescript/edit/develop/docs/changelog.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
 
 
 <h1 id="change-log">Change Log<a class="headerlink" href="#change-log" title="Permanent link">&para;</a></h1>
 <p>All notable changes to this project will be documented in this file.
 See <a href="https://conventionalcommits.org">Conventional Commits</a> for commit guidelines.</p>
-<h1 id="030-2022-01-14"><a href="https://github.com/awslabs/aws-lambda-powertools-typescript/compare/v0.2.0...v0.3.0">0.3.0</a> (2022-01-14)<a class="headerlink" href="#030-2022-01-14" title="Permanent link">&para;</a></h1>
+<h2 id="081-2022-04-14"><a href="https://github.com/awslabs/aws-lambda-powertools-typescript/compare/v0.8.0...v0.8.1">0.8.1</a> (2022-04-14)<a class="headerlink" href="#081-2022-04-14" title="Permanent link">&para;</a></h2>
 <h3 id="bug-fixes">Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>logger:</strong> change logging to use stdout (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/748">#748</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/0781a479a6ae3c794f94c72b59cd0920073159a2">0781a47</a>)</li>
+</ul>
+<h1 id="080-2022-04-08"><a href="https://github.com/awslabs/aws-lambda-powertools-typescript/compare/v0.7.2...v0.8.0">0.8.0</a> (2022-04-08)<a class="headerlink" href="#080-2022-04-08" title="Permanent link">&para;</a></h1>
+<h3 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h3>
+<ul>
+<li>added captureHTTPsRequest feature (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/677">#677</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/5a367233b3284c4b1c0c18caffd00e585afc9f55">5a36723</a>)</li>
+</ul>
+<h2 id="072-2022-04-01"><a href="https://github.com/awslabs/aws-lambda-powertools-typescript/compare/v0.7.1...v0.7.2">0.7.2</a> (2022-04-01)<a class="headerlink" href="#072-2022-04-01" title="Permanent link">&para;</a></h2>
+<p><strong>Note:</strong> Version bump only for package aws-lambda-powertools-typescript</p>
+<h2 id="071-2022-03-17"><a href="https://github.com/awslabs/aws-lambda-powertools-typescript/compare/v0.7.0...v0.7.1">0.7.1</a> (2022-03-17)<a class="headerlink" href="#071-2022-03-17" title="Permanent link">&para;</a></h2>
+<h3 id="bug-fixes_1">Bug Fixes<a class="headerlink" href="#bug-fixes_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>logger:</strong> enable sequential invocation in e2e test (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/658">#658</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/800424bc77223682ad6cdcc9f35080aff30ba91e">800424b</a>)</li>
+<li><strong>logger:</strong> fix handling of additional log keys (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/614">#614</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/8aab29900c5fac8eb625eb747acbc23ceac8f6ba">8aab299</a>)</li>
+<li><strong>tracer, metrics:</strong> use polling instead of fixed wait in e2e tests (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/654">#654</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/6d4ab751bc98eb823d2a68b4973fa9f8405971a2">6d4ab75</a>)</li>
+</ul>
+<h1 id="070-2022-03-08"><a href="https://github.com/awslabs/aws-lambda-powertools-typescript/compare/v0.6.0...v0.7.0">0.7.0</a> (2022-03-08)<a class="headerlink" href="#070-2022-03-08" title="Permanent link">&para;</a></h1>
+<h3 id="features_1">Features<a class="headerlink" href="#features_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>logger:</strong> adopted Utility class &amp; updated unit tests (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/550">#550</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/48f34870d5bc3a5affcb70c8927859c56da6c5ff">48f3487</a>)</li>
+<li><strong>metrics:</strong> adopted Utility class (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/548">#548</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/672e6a82a2c66f99153c63a53e9d31481afd897a">672e6a8</a>)</li>
+<li><strong>tracer:</strong> adopted Utility class &amp; updated unit tests (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/549">#549</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/3769a694725cc2a3fe6fb5f90fb045f73ea32a7c">3769a69</a>)</li>
+</ul>
+<h1 id="060-2022-02-17"><a href="https://github.com/awslabs/aws-lambda-powertools-typescript/compare/v0.5.1...v0.6.0">0.6.0</a> (2022-02-17)<a class="headerlink" href="#060-2022-02-17" title="Permanent link">&para;</a></h1>
+<h3 id="bug-fixes_2">Bug Fixes<a class="headerlink" href="#bug-fixes_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>logger:</strong> fix logger attribute merging (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/535">#535</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/8180be1ceb3f75bb7a35a7905cca867fb5eaa970">8180be1</a>)</li>
+</ul>
+<h3 id="features_2">Features<a class="headerlink" href="#features_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>commons:</strong> centralize cold start heuristic (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/547">#547</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/4e4091f7b853c56a8dfd28829f09a066cc8e2ee7">4e4091f</a>)</li>
+<li><strong>logger:</strong> add e2e tests for logger (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/529">#529</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/e736b652c112b1c24c29eca8b1edfd87a79d1b2e">e736b65</a>)</li>
+</ul>
+<h2 id="051-2022-02-09"><a href="https://github.com/awslabs/aws-lambda-powertools-typescript/compare/v0.5.0...v0.5.1">0.5.1</a> (2022-02-09)<a class="headerlink" href="#051-2022-02-09" title="Permanent link">&para;</a></h2>
+<h3 id="bug-fixes_3">Bug Fixes<a class="headerlink" href="#bug-fixes_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>tracer:</strong> properly return DynamoDB.DocumentClient (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/528">#528</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/3559e7b19339a4649f235fb4af41c6b182da3df1">3559e7b</a>)</li>
+</ul>
+<h3 id="reverts">Reverts<a class="headerlink" href="#reverts" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Revert "build(deps-dev): bump aws-cdk from 1.139.0 to 1.143.0 (#532)" (#544) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/e96c9ba5bd4f738e5ed7c5850e06856a8c69bff1">e96c9ba</a>), closes <a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/532">#532</a> <a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/544">#544</a></li>
+<li>Revert "build(deps-dev): bump @aws-cdk/aws-lambda-nodejs from 1.139.0 to 1.143.0 (#531)" (#545) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/7dffbd8708555fcc9817ea4373ccf71b0aea3c89">7dffbd8</a>), closes <a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/531">#531</a> <a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/545">#545</a></li>
+</ul>
+<h1 id="050-2022-01-26"><a href="https://github.com/awslabs/aws-lambda-powertools-typescript/compare/v0.4.0...v0.5.0">0.5.0</a> (2022-01-26)<a class="headerlink" href="#050-2022-01-26" title="Permanent link">&para;</a></h1>
+<h3 id="bug-fixes_4">Bug Fixes<a class="headerlink" href="#bug-fixes_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>examples:</strong> fix errors in logger and metrics examples (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/509">#509</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/c19b47cb4cdb71e0ae404e9302226256d02fb7d5">c19b47c</a>)</li>
+<li><strong>logger|metrics:</strong> properly return decorated class (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/489">#489</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/014c5bd7d5c807064af8f04c16d297a8fe3bc0d9">014c5bd</a>)</li>
+</ul>
+<h3 id="features_3">Features<a class="headerlink" href="#features_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Add codespaces/gitpod support (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/485">#485</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/ed6f258d6f8025bcfa9db3ea3d6a05a1338802e3">ed6f258</a>)</li>
+<li><strong>all:</strong> make <code>@middy/core</code> optional (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/511">#511</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/1107f96e9b4c678d34ee36757366f150d99be4dc">1107f96</a>)</li>
+<li><strong>tracer:</strong> add support for capturing DynamoDB DocumentClient (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/450">#450</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/621ae50430e4459f90eaaa135eb0ed674b95e108">621ae50</a>)</li>
+</ul>
+<h1 id="040-2022-01-20"><a href="https://github.com/awslabs/aws-lambda-powertools-typescript/compare/v0.3.3...v0.4.0">0.4.0</a> (2022-01-20)<a class="headerlink" href="#040-2022-01-20" title="Permanent link">&para;</a></h1>
+<h3 id="features_4">Features<a class="headerlink" href="#features_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>logger:</strong> JSDOCS support (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/491">#491</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/cd2c2d93a5822e26d3113a042be1dd0473aa6b2a">cd2c2d9</a>)</li>
+</ul>
+<h2 id="033-2022-01-17"><a href="https://github.com/awslabs/aws-lambda-powertools-typescript/compare/v0.3.2...v0.3.3">0.3.3</a> (2022-01-17)<a class="headerlink" href="#033-2022-01-17" title="Permanent link">&para;</a></h2>
+<h3 id="bug-fixes_5">Bug Fixes<a class="headerlink" href="#bug-fixes_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>lerna version not publishing all packages (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/480">#480</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/0cabc3ff7b29fae8a01aeae56450d19737af3bba">0cabc3f</a>)</li>
+</ul>
+<h2 id="032-2022-01-17"><a href="https://github.com/awslabs/aws-lambda-powertools-typescript/compare/v0.3.1...v0.3.2">0.3.2</a> (2022-01-17)<a class="headerlink" href="#032-2022-01-17" title="Permanent link">&para;</a></h2>
+<h3 id="bug-fixes_6">Bug Fixes<a class="headerlink" href="#bug-fixes_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>export LogFormatter + update docs (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/479">#479</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/7f91566d4ff34887914009e2424df7c39a96cd71">7f91566</a>)</li>
+<li>updated CDK examples to remove old references &amp; improve comments (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/439">#439</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/4cdaaeaf7fbb24571b194c0e82338fbd216d2dcd">4cdaaea</a>)</li>
+</ul>
+<h2 id="031-2022-01-14"><a href="https://github.com/awslabs/aws-lambda-powertools-typescript/compare/v0.3.0...v0.3.1">0.3.1</a> (2022-01-14)<a class="headerlink" href="#031-2022-01-14" title="Permanent link">&para;</a></h2>
+<h3 id="bug-fixes_7">Bug Fixes<a class="headerlink" href="#bug-fixes_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>all:</strong> fix latest release broken by change of npm pack result on common (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/470">#470</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/2c3df9378ac191f6da6cb5f458f6227d6466cafa">2c3df93</a>), closes <a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/417">#417</a></li>
+</ul>
+<h1 id="030-2022-01-14"><a href="https://github.com/awslabs/aws-lambda-powertools-typescript/compare/v0.2.0...v0.3.0">0.3.0</a> (2022-01-14)<a class="headerlink" href="#030-2022-01-14" title="Permanent link">&para;</a></h1>
+<h3 id="bug-fixes_8">Bug Fixes<a class="headerlink" href="#bug-fixes_8" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>build:</strong> Fix linting issue and add linting to the pre-push hook (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/440">#440</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/e7bc53c38b2a906c6952a83c5262db521ea468fb">e7bc53c</a>)</li>
 <li><strong>build:</strong> Update contributing.md and fix npm ci (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/417">#417</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/279ad984f71d5b157a13cffeab52602f2c09c1f8">279ad98</a>), closes <a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/415">#415</a> <a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/415">#415</a></li>
 <li><strong>metrics:</strong> Rename purgeStoredMetrics() function usage in CDK example (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/424">#424</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/02f0eae2c378bd5562facf032fb94a25c69f66df">02f0eae</a>)</li>
 <li><strong>tracer:</strong> avoid throwing errors in manual instrumentation when running outside of AWS Lambda  (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/442">#442</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/fd02acbbe7de1cd0d1b00ae1cca68148a5114cbf">fd02acb</a>)</li>
 </ul>
-<h3 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h3>
+<h3 id="features_5">Features<a class="headerlink" href="#features_5" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>all:</strong> Update to examples use released version (0.2.0) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/issues/405">#405</a>) (<a href="https://github.com/awslabs/aws-lambda-powertools-typescript/commit/d5e0620473f31d0839c027a76a88dcdcb98c84de">d5e0620</a>)</li>
 </ul>
 <h1 id="020-2022-01-05">0.2.0 (2022-01-05)<a class="headerlink" href="#020-2022-01-05" title="Permanent link">&para;</a></h1>
-<h3 id="features_1">Features<a class="headerlink" href="#features_1" title="Permanent link">&para;</a></h3>
+<h3 id="features_6">Features<a class="headerlink" href="#features_6" title="Permanent link">&para;</a></h3>
 <ul>
 <li><em>tracer:</em> beta release (#91 (https://github.com/awslabs/aws-lambda-powertools-python/issues/91))</li>
 <li><em>logger:</em> beta release (#24 (https://github.com/awslabs/aws-lambda-powertools-python/issues/24))</li>
@@ -693,7 +864,7 @@ See <a href="https://conventionalcommits.org">Conventional Commits</a> for commi
         </div>
         
           <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
             Back to top
           </a>
         
@@ -706,7 +877,7 @@ See <a href="https://conventionalcommits.org">Conventional Commits</a> for commi
         
         <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Homepage" rel="prev">
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
@@ -730,7 +901,7 @@ See <a href="https://conventionalcommits.org">Conventional Commits</a> for commi
             </div>
           </div>
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
           </div>
         </a>
       
@@ -741,7 +912,7 @@ See <a href="https://conventionalcommits.org">Conventional Commits</a> for commi
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2021 Amazon Web Services
+      Copyright &copy; 2022 Amazon Web Services
     </div>
   
   
@@ -760,10 +931,10 @@ See <a href="https://conventionalcommits.org">Conventional Commits</a> for commi
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.expand", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.cefbb252.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.instant", "navigation.indexes", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.a5f8ea78.min.js"></script>
+      <script src="../assets/javascripts/bundle.748e2769.min.js"></script>
       
         <script src="../javascript/aws-amplify.min.js"></script>
       
